@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TNS Consumption Board - You have received a bill for your energy use.</title>
+	
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+	
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		
+    <script type="text/javascript" src="jquery.min.js"></script>
+	<script src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="logo">
+			<img src="img/logo.png">
+			This is a prototype for the class Collab: University Center.
+		</div>
+	
+		<section>
+			<div id="header1">You have received a bill for your energy use.</div>
+			
+			<div id="instructions">
+				Log in to pay your bill using your prepaid credits.
+				These credits are part of your New School Tuition and/or Housing Fees.
+			</div>
+			
+			<div id="login">
+				<label>Account Name</label>				
+				<input type="text" id="acct-form">
+				<input type="button" id="acct-submit" value="Login">
+				<p class="warning"></p>
+			</div>
+			
+			<div id="account">
+				<p class="accountName"></p>
+				<p class="accountNum"></p>
+				<p class="accountBlc"></p>
+			</div>
+			
+			<div id="due">
+				<p class="amountDueText"></p>
+				<p class="amountDue"></p>
+				<p class="payBill"><input type="submit" value="Pay Bill" id="pay-bill"></p>
+			</div>
+			
+			<div id="balance">
+			</div>
+			
+			<div id="information">
+				<div id="header2">Paying for electricity at the New School?</div>
+				<p>This is a prototype that we (Fei Liu and Mirte Becker) made
+					for a class called Collab: University Center. Students pay for the utilities 
+					of the university buildings. We're looking into personalizing all this data and creating a system of utility 					credits, so to create a feedback loop for energy usage at the New School for the people that pay for it, 						and to give you a frame of reference of what electricity in the city costs.<p>
+					
+				<div id="signup">
+					Sign me up for next month's bill as well!
+					<label>Email address</label>
+					<input type="text" id="signup-form">
+					<input type="button" id="signup-submit" value="Submit">
+				</div>
+			</div>
+		</section>
+	</div>
+	
+<script src="scripts.js"></script>
+</body>
+</html>
